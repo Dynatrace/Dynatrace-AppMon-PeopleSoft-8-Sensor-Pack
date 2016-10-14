@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dynatrace version="1.0" date="4/29/08 3:44 PM">
+  <instrumentation>
+    <ruleset name="java" key="com.dynatrace.diagnostics.knowledgesensor.java.peoplesoft.peoplesoft8" description="PeopleSoft 8" userdefined="true" ruletype="java" group="ERP Frameworks" order="8" hint="PeopleSoft 8 Sensor Pack for ICClien, PeopleSoft, and Jolt code">
+      <class name="iclientservlet" match="contains" active="true" delegationsuppression="false" techtype="java">
+        <method name="onAction" match="equals" include="yes" overrideable="true" captureevents="true" active="true" visibility="protectedType" instrtype="auto" synctime="true" onlyinstrumentifsynchappens="false" return="false" api="PeopleSoft" entrypoint="true" argsspecified="false" />
+      </class>
+      <class name="psft.pt8.jb.JBEntry" match="equals" active="true" delegationsuppression="false" techtype="java">
+        <method name="" match="equals" include="yes" overrideable="true" captureevents="true" active="true" visibility="protectedType" instrtype="auto" synctime="true" onlyinstrumentifsynchappens="false" return="false" api="PeopleSoft" entrypoint="false" argsspecified="false" />
+      </class>
+      <class name="psft.pt8.net.NetService" match="equals" active="true" delegationsuppression="false" techtype="java">
+        <method name="" match="equals" include="yes" overrideable="true" captureevents="true" active="true" visibility="protectedType" instrtype="auto" synctime="true" onlyinstrumentifsynchappens="false" return="false" api="PeopleSoft" entrypoint="false" argsspecified="false" />
+      </class>
+      <class name="psft.pt8.portal.ContentGetter" match="equals" active="true" delegationsuppression="false" techtype="java">
+        <method name="" match="equals" include="yes" overrideable="true" captureevents="true" active="true" visibility="protectedType" instrtype="auto" synctime="true" onlyinstrumentifsynchappens="false" return="false" api="PeopleSoft" entrypoint="false" argsspecified="false" />
+      </class>
+      <class name="bea.jolt.JoltRemoteService" match="equals" active="true" delegationsuppression="false" techtype="java">
+        <method name="" match="equals" include="yes" overrideable="true" captureevents="true" active="true" visibility="protectedType" instrtype="auto" synctime="true" onlyinstrumentifsynchappens="false" return="false" api="Jolt" entrypoint="false" argsspecified="false" />
+      </class>
+    </ruleset>
+  </instrumentation>
+</dynatrace>
+
